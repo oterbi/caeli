@@ -1,5 +1,5 @@
 {
-  "name": "@caeli/utils",
+  "name": "@caeli/test",
   "version": "1.0.0",
   "description": "Collection of utility methods for the Caeli API",
   "main": "./dist/index.js",
@@ -11,7 +11,7 @@
     "remove-definitions": "rimraf ./types",
     "remove-dist": "rimraf ./dist"
   },
-  "homepage": "https://github.com/oterbi/caeli",
+  "homepage": "https://github.com/oterbi/caeli/tree/main/utils",
   "repository": {
     "type": "git",
     "url": " https://github.com/oterbi/caeli.git"

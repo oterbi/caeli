@@ -124,7 +124,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk 
 
-# Project build files
-types/
-
 # End of https://www.gitignore.io/api/osx,node,linux,windows
