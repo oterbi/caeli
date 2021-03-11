@@ -5,7 +5,7 @@ import { ApiResponse } from "./models/api-response";
 
 /**
  * Generates a success response with the given body
- * @param response the response body
+ * @param body the response body
  * @returns the success response
  */
 export function successResponse(body: ApiResponse): APIGatewayProxyResult {
@@ -14,7 +14,7 @@ export function successResponse(body: ApiResponse): APIGatewayProxyResult {
 
 /**
  * Generates a bad request response with the given body
- * @param response the response body
+ * @param body the response body
  * @returns the bad request response
  */
 export function badRequestResponse(body: ApiResponse): APIGatewayProxyResult {
@@ -22,8 +22,17 @@ export function badRequestResponse(body: ApiResponse): APIGatewayProxyResult {
 }
 
 /**
+ * Generates a method not allowed response with the given body
+ * @param body the response body
+ * @returns the method not allowed response
+ */
+export function notAllowedResponse(body: ApiResponse): APIGatewayProxyResult {
+  return generateResponse(StatusCodes.MethodNotAllowed, body);
+}
+
+/**
  * Generates an error response with the given body
- * @param response the response body
+ * @param body the response body
  * @returns the error response
  */
 export function errorResponse(body: ApiResponse): APIGatewayProxyResult {

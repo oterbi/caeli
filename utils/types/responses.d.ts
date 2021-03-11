@@ -13,6 +13,12 @@ export declare function successResponse(body: ApiResponse): APIGatewayProxyResul
  */
 export declare function badRequestResponse(body: ApiResponse): APIGatewayProxyResult;
 /**
+ * Generates a method not allowed response with the given body
+ * @param response the response body
+ * @returns the method not allowed response
+ */
+export declare function notAllowedResponse(body: ApiResponse): APIGatewayProxyResult;
+/**
  * Generates an error response with the given body
  * @param response the response body
  * @returns the error response

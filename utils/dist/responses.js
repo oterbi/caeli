@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.errorResponse = exports.badRequestResponse = exports.successResponse = void 0;
+exports.errorResponse = exports.notAllowedResponse = exports.badRequestResponse = exports.successResponse = void 0;
 const headers_1 = require("./constants/headers");
 const status_codes_1 = require("./constants/status-codes");
 /**
@@ -21,6 +21,15 @@ function badRequestResponse(body) {
     return generateResponse(status_codes_1.StatusCodes.BadRequest, body);
 }
 exports.badRequestResponse = badRequestResponse;
+/**
+ * Generates a method not allowed response with the given body
+ * @param response the response body
+ * @returns the method not allowed response
+ */
+function notAllowedResponse(body) {
+    return generateResponse(status_codes_1.StatusCodes.MethodNotAllowed, body);
+}
+exports.notAllowedResponse = notAllowedResponse;
 /**
  * Generates an error response with the given body
  * @param response the response body
